@@ -6,7 +6,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <meta name="Pagina inicial de MyBoilerplate" content="content">
+    <meta name="Pagina inicial de spa-navigation" content="content">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="viewport" content="width = 320, initial-scale = 2.3, user-scalable = no">
@@ -38,75 +38,39 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml"><!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-    <link rel="stylesheet" href="assets/css/styles.css?t=1588639262073">
-    <title>Home | Layouts</title>
+    <link rel="stylesheet" href="assets/css/styles.css?t=1589144264767">
+    <title>Home | spa-navigation</title>
   </head>
   <body class="home" itemscope itemtype="http://schema.org/WebPage">
     <header class="main-header">
+      <nav class="top-nav">
+        <div class="top-nav__container"><a class="top-nav__link" href="./"><img class="top-nav__logo" src="assets/img/img1.jpg" alt=""></a>
+          <ul class="top-nav__menu">
+            <li class="top-nav__li"><a class="top-nav__anchor" href="#section1">Section1</a></li>
+            <li class="top-nav__li"><a class="top-nav__anchor" href="#section2">Section2</a></li>
+            <li class="top-nav__li"><a class="top-nav__anchor" href="#section3">Section3</a></li>
+            <li class="top-nav__li"><a class="top-nav__anchor" href="#section4">Section4</a></li>
+          </ul>
+          <button class="top-nav__mb-iconMenu hamburger hamburger--slider-r" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        </div>
+      </nav>
     </header>
     <main class="main-container">
-      <h1>Gulp Boilerplate</h1>
-            <div><img src="assets/img/img1.jpg" style="width:100px">
-              <p>Company</p>
-            </div>
-            <div><img src="assets/img/img2.jpg" style="width:100px">
-              <p>Company</p>
-            </div>
-            <div><img src="assets/img/img3.jpg" style="width:100px">
-              <p>Company</p>
-            </div>
-            <div><img src="assets/img/img4.jpg" style="width:100px">
-              <p>Company</p>
-            </div>
-      <h1>Write Markdown in the html file</h1><ul>
-<li>Lorem ipsum dolor sit amet consectetur adipisicing <code>elit</code>.</li>
-<li>Lorem ipsum dolor sit amet consectetur adipisicing <code>elit</code>.</li>
-<li>Lorem ipsum dolor sit amet consectetur adipisicing <code>elit</code>.</li>
-<li>Lorem ipsum dolor sit amet consectetur adipisicing <code>elit</code>.</li>
-</ul>
-
-      <h1>Write Markdown in the html file (html)</h1><pre><code class="language-html">	&lt;!DOCTYPE html&gt;
-	&lt;html lang=&quot;en&quot;&gt;
-	&lt;head&gt;
-		&lt;title&gt;Pug&lt;/title&gt;
-		&lt;script type=&quot;text/javascript&quot;&gt;
-			foo = true;
-			bar = function () {};
-			if (foo) { bar(1 + 5) }
-		&lt;/script&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
-		&lt;h1&gt;Pug - node template engine&lt;/h1&gt;
-		&lt;div id=&quot;container&quot; class=&quot;col&quot;&gt;
-		&lt;p&gt;You are amazing&lt;/p&gt;
-		&lt;p&gt; Lorem ipsum.&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/body&gt;
-	&lt;/html&gt;
-</code></pre>
-
-      <h1>Importing Markdown files in the html </h1><h1>This is a Markdown Example</h1>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-<pre><code class="language-html">&lt;a class=&quot;button&quot;&gt;.button.first-color&lt;/a&gt;
-&lt;a class=&quot;button second-color&quot;&gt;.button.second-color&lt;/a&gt;
-&lt;a class=&quot;button third-color&quot;&gt;.button.third-color&lt;/a&gt;
-&lt;a class=&quot;button accent-color&quot;&gt;.button.accent-color&lt;/a&gt;
-&lt;a class=&quot;button dark-color&quot;&gt;.button.dark-color&lt;/a&gt;
-&lt;a class=&quot;button text-color&quot;&gt;.button.text-color&lt;/a&gt;
-&lt;a class=&quot;button light-color&quot;&gt;.button.light-color&lt;/a&gt;
-
-</code></pre>
-<pre><code class="language-javascript">alert('Hola Mundo')
-
-</code></pre>
-<pre><code class="language-css">body{
-	background: red;
-}
-</code></pre>
-
+      <section class="section-container" id="section1">
+        <h1>section #1</h1>
+      </section>
+      <section class="section-container" id="section2">
+        <h1>section #2</h1>
+      </section>
+      <section class="section-container" id="section3">
+        <h1>section #3</h1>
+      </section>
+      <section class="section-container" id="section4">
+        <h1>section #4</h1>
+      </section>
     </main>
     <footer class="main-footer">
     </footer>
-    <script src="assets/js/scripts-min.js?t=1588639262073"></script>
+    <script src="assets/js/scripts-min.js?t=1589144264767"></script>
   </body>
 </html>

@@ -1,0 +1,38 @@
+/* ********** Reset ********** */
+html {
+	box-sizing 			: border-box;
+	font-family 		: var(--main-font), var(--alternate-font);
+	font-size 			: var(--font-size);
+	line-height 		: var(--line-height);
+	color 				: var(--text-color);
+	background			: var(--bg-color);
+  }
+   
+  *,
+  *:after,
+  *:before {
+	box-sizing 			: inherit;
+	padding 			: 0;
+	margin 				: 0;
+  }
+
+  body { overflow-x		: hidden; }
+
+  img {
+	max-width 			: 100%;
+	width 				: 100%;
+	height 				: auto;
+  }
+  
+  ::selection {
+	background-color 	: var(--main-color);
+	color 				: var(--second-color);
+  }
+
+  a {
+	text-decoration 		: none;
+	color 				: var(--link-color);
+	transition 			: all .3s ease-out;
+  
+	&:hover { color: var(--link-hover-color); }
+  }

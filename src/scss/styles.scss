@@ -1,43 +1,29 @@
-// Reset
+// Libraries
+@import "~normalize.css/normalize.css";
+// Configuraciones
+$fractions : 1,2,3,4,5,6,7,8,9,10;
+$breakpoints 		: 
+	(
+		s	: 0,
+		m	: 640px,
+		l	: 960px,
+		lg	: 1280px,
+		xl	: 1600px
+	);
+@import "~ed-grid/ed-grid";
+@import "~hamburgers/_sass/hamburgers/hamburgers.scss"; 
+ 
+// Config
+@import "config/vars";
 
-:root {
-	--main-font			: 'Raleway';
-	--alternate-font	: sans-serif;
-	--font-size 		: 16px; 
-	--line-height 		: 1.6;  
-	--main-color 		: #007BDF;
-	--second-color 		: #fff;	
-	--text-color 		: #000;
-	--bg-color 			: #eee;
-  }
 
-/* ********** Reset ********** */
-html {
-	box-sizing 			: border-box;
-	font-family 		: var(--main-font), var(--alternate-font);
-	font-size 			: var(--font-size);
-	line-height 		: var(--line-height);
-	color 				: var(--text-color);
-	background			: var(--bg-color);
-  }
-   
-  *,
-  *:after,
-  *:before {
-	box-sizing 			: inherit;
-	padding 			: 0;
-	margin 				: 0;
-  }
+// LAYOUT
+// Escribe solo los estilos de layout (division en regiones del viewport)
+@import "layout/layout";
 
-  body { overflow-x		: hidden; }
+// MODULES (SMACSS) O COMPONENTS (ITCSS)
+@import "components/top-nav"; 
 
-  img {
-	max-width 			: 100%;
-	width 				: 100%;
-	height 				: auto;
-  }
-  
-  ::selection {
-	background-color 	: var(--main-color);
-	color 				: var(--second-color);
-  }
+
+// Utilities (hacks)
+@import "hacks/hacks";

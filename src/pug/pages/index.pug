@@ -1,14 +1,19 @@
 extends ../config/template
 append config
 	-currentPage		= "home"
-	-siteName			= 'Layouts'
+	-siteName			= 'spa-navigation'
 	-content			= 'content'
-	-pageDescription	= 'Pagina inicial de MyBoilerplate'
+	-pageDescription	= 'Pagina inicial de spa-navigation'
 block main-header
 block main-container
-	h1 Gulp Boilerplate
-	include ../components/json-data
-	include ../components/markdown
+	section(class='section-container', id='section1')
+		h1 section #1
+	section(class='section-container', id='section2')
+		h1 section #2
+	section(class='section-container', id='section3')
+		h1 section #3
+	section(class='section-container', id='section4')
+		h1 section #4
 block main-footer
 block scripts 
 

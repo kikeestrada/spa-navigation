@@ -1,7 +1,7 @@
 {
-	"name": "gulp-boilerplate",
-	"short_name": "gulp-boilerplate",
-	"description": "Bienvenid@s a #gulp-boilerplate",
+	"name": "spa-navigation",
+	"short_name": "spa-navigation",
+	"description": "Bienvenid@s a #spa-navigation",
 	"background_color": "#2B2B2B",
 	"theme_color": "#007BDF",
 	"orientation": "portrait",

@@ -1,0 +1,54 @@
+*,
+*:after,
+*:before {
+	box-sizing 			: inherit;
+	padding 			: 0;
+	margin 				: 0;
+}
+
+html {
+	box-sizing 			: border-box;
+	font-family 		: var(--main-font), var(--alternate-font);
+	font-size 			: var(--font-size);
+	line-height 		:  var(--line-height);
+	color 				: var(--text-color);
+	background-color 	: var(--bg-modal-color);
+	overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+
+
+::selection {
+	background-color 	: var(--color-first);
+	color 				: var(--color-text-white);
+}
+
+body {
+	margin         		: var(--header-height) 0 0 0;
+	min-height     		: calc(100vh - var(--header-height));
+	background 			: var(--body-bg);
+	display        		: flex;
+	flex-direction 		: column;
+	overflow-x 			: hidden;	
+}
+
+.section-container{
+	min-height			: 100vh;
+	margin				: 0;
+	padding				: var(--header-height) 0 0 0;;
+	color				: var(--color-light) ;
+}
+.section-container:nth-child(1){
+	background			: var(--color-first);
+}
+.section-container:nth-child(2){
+	background			: var(--color-second);
+}
+.section-container:nth-child(3){
+	background			: var(--color-third);
+}
+.section-container:nth-child(4){
+	background			: var(--color-dark);
+}

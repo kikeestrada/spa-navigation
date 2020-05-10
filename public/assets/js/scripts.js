@@ -3,8 +3,15 @@
 
 var _swDetecter = require('./modules/swDetecter');
 
+var _topNav = require('./modules/topNav');
+
+var _topNav2 = _interopRequireDefault(_topNav);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 (function () {
 	(0, _swDetecter.swDetecter)();
+	(0, _topNav2.default)();
 	if (document.body.classList.contains('home')) {
 		// functions here
 	} else if (document.body.classList.contains('page2')) {
@@ -14,7 +21,7 @@ var _swDetecter = require('./modules/swDetecter');
 	}
 })();
 
-},{"./modules/swDetecter":2}],2:[function(require,module,exports){
+},{"./modules/swDetecter":2,"./modules/topNav":3}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29,6 +36,30 @@ var swDetecter = exports.swDetecter = function swDetecter() {
 		});
 	}
 };
+
+},{}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var topNav = function topNav() {
+	var d = document,
+	    headerBtn = d.querySelector('.hamburger'),
+	    menu = d.querySelector('.top-nav__menu');
+	headerBtn.addEventListener('click', function (e) {
+		e.preventDefault();
+		headerBtn.classList.toggle('is-active'), menu.classList.toggle('is-active');
+	});
+
+	d.addEventListener('click', function (e) {
+		if (e.target.matches('.top-nav__anchor')) {
+			headerBtn.classList.remove('is-active'), menu.classList.remove('is-active');
+		}
+	});
+};
+
+exports.default = topNav;
 
 },{}]},{},[1]);
 
